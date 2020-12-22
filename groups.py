@@ -1,6 +1,6 @@
 # Testing 1,2,3 
 import datetime as datetime
-with open('timestamp.txt','a') as f:
+with open('data/timestamp.txt','a') as f:
    f.write(str(datetime.now())+'\n')
 
 # We'll use microprediction.org histories and the tigramite causality library 
@@ -92,7 +92,7 @@ Z_LIST_OF_LISTS = zlists(ALL_NAMES)
 GROUPS = greedy_groups(Z_LIST_OF_LISTS+DEFINED_LISTS_OF_LISTS)
         
    
-with open('groups.csv','w') as f:
+with open('data/groups.csv','w') as f:
    for k,s in GROUPS.items():
       f.write( ','.join([k,len(s)]+list(s) ) )
     
