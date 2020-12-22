@@ -1,15 +1,6 @@
 # We'll use microprediction.org histories and the tigramite causality library
 # Assuming we can get the thing to install
 import numpy as np
-import matplotlib
-from matplotlib import pyplot as plt
-import sklearn
-import tigramite
-from tigramite import data_processing as pp
-from tigramite import plotting as tp
-from tigramite.pcmci import PCMCI
-from tigramite.independence_tests import ParCorr, GPDC, CMIknn, CMIsymb
-from tigramite.models import LinearMediation, Prediction
 from microprediction import MicroReader
 
 mr = MicroReader()
