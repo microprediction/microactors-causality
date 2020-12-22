@@ -21,22 +21,22 @@ ALL_NAMES = mr.get_stream_names()
 
 # Define some obviously related streams
 # This belongs somewhere else, probably 
-GROUP_DEFINITIONS = [ dict(start='sox',end='salad'),
-               dict(start='sox',end='shake'),
-               dict(start='sox',middle='oopah'),
-               dict(start='traffic-nj511-minutes-'),
-               dict(start='hospital-er-wait-times-'),
-               dict(start='emojitracker-twitter-),
-               dict(start='electricity-lbmp-nyiso'),
-               dict(start='electricity-load'),
-               dict(start='electricity-fueltype-nyiso'),
-               dict(start='pandemic_'),
-               dict(start='c5_'),
-               dict(start='copula_'),
-               dict(start='coin_'),
-               dict(start='three_body_'),
-               dict(start='helicopter'),
-               dict(start='traffic_')]
+GROUP_DEFINITIONS = [   dict(start='sox',end='salad'),
+                        dict(start='sox',end='shake'),
+                        dict(start='sox',middle='oopah'),
+                        dict(start='traffic-nj511-minutes-'),
+                        dict(start='hospital-er-wait-times-'),
+                        dict(start='emojitracker-twitter-'),
+                        dict(start='electricity-lbmp-nyiso'),
+                        dict(start='electricity-load'),
+                        dict(start='electricity-fueltype-nyiso'),
+                        dict(start='pandemic_'),
+                        dict(start='c5_'),
+                        dict(start='copula_'),
+                        dict(start='coin_'),
+                        dict(start='three_body_'),
+                        dict(start='helicopter'),
+                        dict(start='traffic_')]
                         
 def condition_match(cond:dict, name:str)->bool:
    """ Does condition match a stream name, after .json is removed? """
