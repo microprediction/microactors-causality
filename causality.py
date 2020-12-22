@@ -1,9 +1,5 @@
-# Testing 1,2,3 
-import datetime as datetime
-with open('timestamp.txt','a') as f:
-   f.write(str(datetime.now())+'\n')
-
-# We'll use microprediction.org histories and the tigramite causality library 
+# We'll use microprediction.org histories and the tigramite causality library
+# Assuming we can get the thing to install
 import numpy as np
 import matplotlib
 from matplotlib import pyplot as plt
@@ -17,7 +13,8 @@ from tigramite.models import LinearMediation, Prediction
 from microprediction import MicroReader
 
 mr = MicroReader()
-ALL_NAMES = mr.get_stream_names() 
+
+
 
 # Define some obviously related streams
 # This belongs somewhere else, probably 
@@ -70,7 +67,7 @@ def greedy_groups(lists_of_parents:[[str]])->dict:
             if p in groups:
                for p1 in ps: 
                   groups[p].add(p1)
-    return groups
+   return groups
    
                     
 def zlists(names:[str])->dict:
