@@ -13,7 +13,7 @@ on:
     # How often do you want to fit your model? 
     # Public github accounts get 2000 minutes / month 
     # * is a special character in YAML so you have to quote this string
-    - cron:  '6,22,34,51 * * * *'
+    - cron:  '6,22,34,43,51,55 * * * *'
 
 defaults:
   run:
