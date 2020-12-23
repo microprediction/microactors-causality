@@ -1,0 +1,70 @@
+# Show causality lag relationships to www.microprediction.org historical data
+# 
+# 1. Check outs code
+# 2. Analyzes causality
+# 3. Creates plots and other artifacts
+# 4. Checks everything back into the master branch
+
+name: Causality 22 44
+
+on:
+  schedule:
+    # How often do you want to fit your model? 
+    # Public github accounts get 2000 minutes / month 
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '22,44 * * * *'
+
+defaults:
+  run:
+    working-directory: ./
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+            python -m pip install --upgrade pip
+            pip install --upgrade cython
+            pip install --upgrade microprediction
+            pip install git+https://github.com/jakobrunge/tigramite.git
+            pip install matplotlib
+      - name: Run causality.py
+        run: |
+          python causality.py
+      - name: Show git status
+        run: | 
+          git status
+      - name: Add data files  
+        run: |
+          git config --local user.name  ${{ github.actor }}
+          git config --local user.email "my@email.com"
+          git add --all           
+      - name: Show git status
+        run: | 
+          git status
+      
+      - name: Commit
+        run: |  
+          git commit -a -m "New plots"
+          
+      - name: Show git status
+        run: | 
+          git status
+                    
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
