@@ -16,4 +16,4 @@ See [/gallery](https://github.com/microprediction/microactors-causality/tree/mai
 
 ![](https://i.imgur.com/mEA8Iom.png)
 
-This demonstrates that coin flips aren't causally related to electricity production - an important footnote in the annals of empirical sciencee. 
+This demonstrates that coin flips aren't causally related to electricity production - an important footnote in the annals of empirical science. 
