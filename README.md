@@ -2,6 +2,12 @@
 
 This repository uses GitHub Actions and Tigramite to maintain causality information and plots. 
 
+### What this does
+
+   1. Tests the current version of Tigramite package on github (not PyPI which is currently broken)
+   2. Creates pretty pictures
+
+
 ### Intended usage 
 
 You can retrieve data directly from JSON files in [/data](https://github.com/microprediction/microactors-causality/tree/main/data). Should you wish to create your
