@@ -39,9 +39,7 @@ jobs:
             python -m pip install --upgrade pip
             pip install --upgrade microprediction
             pip install matplotlib
-      - name: Run groups.py 
-        env:
-          WRITE_KEY: ${{ secrets.WRITE_KEY }}
+      - name: Run groups.py
         run: |
           python groups.py
       - name: Show git status
