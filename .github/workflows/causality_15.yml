@@ -1,10 +1,9 @@
 # Show causality lag relationships to www.microprediction.org historical data
 # 
 # 1. Check outs code
-# 2. Collates lagged values for certain types of stream
-# 3. Analyzes causality
-# 4. Creates plots and other artifacts
-# 5. Checks everything back into the master branch 
+# 2. Analyzes causality
+# 3. Creates plots and other artifacts
+# 4. Checks everything back into the master branch
 
 name: Causality every 15
 
@@ -39,11 +38,9 @@ jobs:
             python -m pip install --upgrade pip
             pip install --upgrade cython
             pip install --upgrade microprediction
-            pip install --upgrade tigramite
+            pip install git+https://github.com/jakobrunge/tigramite.git
             pip install matplotlib
-      - name: Run causality.py 
-        env:
-          WRITE_KEY: ${{ secrets.WRITE_KEY }}
+      - name: Run causality.py
         run: |
           python causality.py
       - name: Show git status
