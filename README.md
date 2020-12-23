@@ -12,7 +12,7 @@ own variation, then simply:
   
 ### Gallery
 
-See [/gallery](https://github.com/microprediction/microactors-causality/tree/main/gallery) for causality maps like this:
+See [/gallery](https://github.com/microprediction/microactors-causality/tree/main/gallery) for causality maps like this, where each column is a time step. 
 
 ![](https://i.imgur.com/mEA8Iom.png)
 
