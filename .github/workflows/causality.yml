@@ -5,14 +5,14 @@
 # 3. Creates plots and other artifacts
 # 4. Checks everything back into the master branch
 
-name: Causality 22 44
+name: Daily Causality
 
 on:
   schedule:
     # How often do you want to fit your model? 
     # Public github accounts get 2000 minutes / month 
     # * is a special character in YAML so you have to quote this string
-    - cron:  '22,44 * * * *'
+    - cron:  '1 1 * * *'
 
 defaults:
   run:
