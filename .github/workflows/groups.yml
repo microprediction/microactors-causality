@@ -14,7 +14,7 @@ on:
     # Public github accounts get 2000 minutes / month 
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/19 * * * *'
-
+ 
 defaults:
   run:
     working-directory: ./
