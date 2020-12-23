@@ -6,14 +6,14 @@
 # 4. Creates plots and other artifacts
 # 5. Checks everything back into the master branch 
 
-name: Groups on 19
+name: Daily groups
 
 on:
   schedule:
     # How often do you want to fit your model? 
     # Public github accounts get 2000 minutes / month 
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/19 * * * *'
+    - cron:  '45 23 * * *'
 
 defaults:
   run:
