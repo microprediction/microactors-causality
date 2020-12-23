@@ -1,6 +1,6 @@
 # microactors-causality
 
-This repository uses GitHub Actions to maintain causality information and plots. 
+This repository uses GitHub Actions and Tigramite to maintain causality information and plots. 
 
 ### Intended usage 
 
@@ -12,8 +12,8 @@ own variation, then simply:
   
 ### Gallery
 
-See [/gallery](https://github.com/microprediction/microactors-causality/tree/main/gallery) for causality maps like this:
+See [/gallery](https://github.com/microprediction/microactors-causality/tree/main/gallery) for causality maps like this, where each column is a time step. 
 
 ![](https://i.imgur.com/mEA8Iom.png)
 
-This demonstrates that coin flips aren't causally related to electricity production - an important footnote in the annals of empirical sciencee. 
+This demonstrates that coin flips aren't causally related to electricity production - an important footnote in the annals of empirical science. 
