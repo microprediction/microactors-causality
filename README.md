@@ -1,6 +1,6 @@
 # microactors-causality
 
-This repository uses GitHub Actions to maintain causality information and plots. 
+This repository uses GitHub Actions and Tigramite to maintain causality information and plots. 
 
 ### Intended usage 
 
