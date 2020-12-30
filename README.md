@@ -4,9 +4,10 @@ This repository uses GitHub Actions and Tigramite to maintain causality informat
 
 ### What this does
 
-   1. Tests the current version of Tigramite package on github (not PyPI which is currently broken)
+   1. Tests the current version of Tigramite package from github
    2. Creates pretty pictures
 
+Thus it serves to test the tigramite package master branch
 
 ### Intended usage 
 
